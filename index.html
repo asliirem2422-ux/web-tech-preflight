@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sprint 1: Semantik Web ve Formlar</title>
 </head>
 <body>
-    <h1>Merhaba Web Teknolojileri!</h1>
-<p>İlk sayfam başarıyla çalışıyor.</p>
+
+  <!-- 1. HEADER: Üst bilgi ve navigasyon alanı -->
+  <header>
+    <h1>Web Teknolojileri Projesi</h1>
+    <nav>
+      <ul>
+        <li><a href="#hakkinda">Hakkında</a></li>
+        <li><a href="#ozellikler">Özellikler</a></li>
+        <li><a href="#iletisim">İletişim Formu</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- 2. MAIN: Sayfanın ana ve özgün içerik alanı -->
+  <main>
+
+    <!-- Bölüm 1: Hakkında -->
+    <section id="hakkinda">
+      <h2>Ders Hakkında</h2>
+      <p>Bu proje, modern web geliştirme adımlarını (HTML5, CSS3, JavaScript ve Node.js) kapsayan dönemlik bir çalışmadır.</p>
+    </section>
+
+    <!-- Bölüm 2: Makale / İçerik Bloğu -->
+    <article id="ozellikler">
+      <h2>Semantik HTML Nedir?</h2>
+      <p>Semantik etiketler (header, nav, main, section, footer), web sayfasının yapısını hem tarayıcılara hem de arama motorlarına anlamlı bir hiyerarşiyle sunar.</p>
+    </article>
+
+    <!-- Bölüm 3: Form Bileşeni -->
+    <section id="iletisim">
+      <h2>Kullanıcı Kayıt / İletişim Formu</h2>
+      <form action="#" method="POST">
+        <div>
+          <label for="adSoyad">Ad Soyad:</label>
+          <input type="text" id="adSoyad" name="adSoyad" placeholder="Adınızı giriniz" required>
+        </div>
+        <br>
+        <div>
+          <label for="eposta">E-posta:</label>
+          <input type="email" id="eposta" name="eposta" placeholder="ornek@mail.com" required>
+        </div>
+        <br>
+        <div>
+          <label for="rol">Rol Seçimi:</label>
+          <select id="rol" name="rol">
+            <option value="ogrenci">Öğrenci</option>
+            <option value="ogretmen">Öğretmen</option>
+            <option value="gelistirici">Geliştirici</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <label for="mesaj">Mesajınız:</label><br>
+          <textarea id="mesaj" name="mesaj" rows="4" cols="40" placeholder="Mesajınızı buraya yazınız..."></textarea>
+        </div>
+        <br>
+        <button type="submit">Gönder</button>
+      </form>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <!-- 3. FOOTER: Sayfa alt bilgisi -->
+  <footer>
+    <p>&copy; 2026 Web Teknolojileri Dersi. Tüm hakları saklıdır.</p>
+  </footer>
+
 </body>
 </html>
